@@ -9,7 +9,6 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 public class SignupActivity extends AppCompatActivity {
 
@@ -22,7 +21,7 @@ public class SignupActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_signup);
         btnSignup = (ImageButton) findViewById(R.id.btnSignup);
         Animation animsighup = AnimationUtils.loadAnimation(this,R.anim.animbtnsignup);
         btnSignup.startAnimation(animsighup);
@@ -32,7 +31,7 @@ public class SignupActivity extends AppCompatActivity {
 
                 startActivity(new Intent(SignupActivity.this,LoadActivity.class));
 
-                overridePendingTransition(R.anim.animactivitytop,R.anim.animactivitybottom);
+
             }
 
 
