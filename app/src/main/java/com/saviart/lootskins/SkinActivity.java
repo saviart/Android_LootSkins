@@ -3,6 +3,7 @@ package com.saviart.lootskins;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+
 public class SkinActivity extends AppCompatActivity {
 
     @Override
