@@ -10,14 +10,14 @@ import android.view.ViewGroup;
 import com.gigamole.navigationtabstrip.NavigationTabStrip;
 
 
-public class SkinActivity extends AppCompatActivity {
+public class MainScreenActivity extends AppCompatActivity {
     private ViewPager mViewPager;
     private NavigationTabStrip mNavigationTabStrip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_skin);
+        setContentView(R.layout.activity_mainscreen);
         initUI();
         setUI();
     }
@@ -26,7 +26,8 @@ public class SkinActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.vp);
 
         mNavigationTabStrip = (NavigationTabStrip) findViewById(R.id.nts_center);
-        mNavigationTabStrip.setTitles("A", "B", "C");
+        mNavigationTabStrip.setTitles("SKINS", "PROFILE", "EARN","SETTING");
+
 
     }
 
@@ -34,7 +35,7 @@ public class SkinActivity extends AppCompatActivity {
         mViewPager.setAdapter(new PagerAdapter() {
             @Override
             public int getCount() {
-                return 3;
+                return 4;
             }
 
             @Override
@@ -54,6 +55,6 @@ public class SkinActivity extends AppCompatActivity {
                 return view;
             }
         });
-        mNavigationTabStrip.setViewPager(mViewPager, 1);
+        mNavigationTabStrip.setViewPager(mViewPager, 0);
     }
 }
