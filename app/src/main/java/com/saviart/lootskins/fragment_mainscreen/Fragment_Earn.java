@@ -1,4 +1,4 @@
-package com.saviart.lootskins;
+package com.saviart.lootskins.fragment_mainscreen;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,16 +9,18 @@ import  android.view.View;
 import  android.view.ViewGroup;
 import android.support.annotation.NonNull;
 
-public class Fragment_Setting extends Fragment {
+import com.saviart.lootskins.R;
+
+public class Fragment_Earn extends Fragment {
     View view;
-    public Fragment_Setting(){
+    public Fragment_Earn(){
     }
 
 
     @NonNull
     @Override
     public  View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceStage) {
-        view = inflater.inflate(R.layout.setting_fragment,container,false);
+        view = inflater.inflate(R.layout.fragment_earn,container,false);
         return view;
     }
 

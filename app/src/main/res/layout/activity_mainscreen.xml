@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntroActivity"
+    tools:context=".Activity_Intro"
     android:background="@drawable/login_bg">
 
 
@@ -16,6 +16,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <View
+            android:id="@+id/navigation_view"
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:layout_gravity="center"
@@ -23,7 +24,7 @@
             android:background="#182128" />
 
         <com.gigamole.navigationtabstrip.NavigationTabStrip
-            android:id="@+id/nts_center"
+            android:id="@+id/navigation_main"
             android:layout_width="match_parent"
             android:layout_height="42dp"
             android:layout_gravity="center"
@@ -45,7 +46,7 @@
     </FrameLayout>
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/vp"
+        android:id="@+id/viewpager_main"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"

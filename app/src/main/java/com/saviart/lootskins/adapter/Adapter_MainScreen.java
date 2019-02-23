@@ -1,4 +1,4 @@
-package com.saviart.lootskins;
+package com.saviart.lootskins.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -7,11 +7,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViewPagerAdapter extends FragmentPagerAdapter {
+public class Adapter_MainScreen extends FragmentPagerAdapter {
     private  final List<Fragment> fragmentList = new ArrayList<>();
     private  final List<String> FragmentListTitles = new ArrayList<>();
 
-    public ViewPagerAdapter(FragmentManager fm ) {
+    public Adapter_MainScreen(FragmentManager fm ) {
         super(fm);
     }
 

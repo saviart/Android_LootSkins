@@ -1,4 +1,4 @@
-package com.saviart.lootskins;
+package com.saviart.lootskins.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,13 +9,16 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.saviart.lootskins.R;
+import com.saviart.lootskins.constructor.Constructor_Intro;
+
 import java.util.List;
 
-public class IntroViewPagerAdapter extends PagerAdapter{
+public class Adapter_IntroViewPager extends PagerAdapter{
 
     Context mContext;
-     List<ScreenItem> mListScreen;
-    public IntroViewPagerAdapter(Context mContext, List<ScreenItem> mListScreen) {
+     List<Constructor_Intro> mListScreen;
+    public Adapter_IntroViewPager(Context mContext, List<Constructor_Intro> mListScreen) {
         this.mContext = mContext;
         this.mListScreen = mListScreen;
     }
@@ -25,11 +28,12 @@ public class IntroViewPagerAdapter extends PagerAdapter{
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
 
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View layoutScreen = inflater.inflate(R.layout.layout_screen,null);
+        View layoutScreen = inflater.inflate(R.layout.fragment_intro,null);
 
         ImageView imgSlide = layoutScreen.findViewById(R.id.intro_img);
         TextView title = layoutScreen.findViewById(R.id.intro_title);
         TextView description = layoutScreen.findViewById(R.id.intro_description);
+
 
         title.setText(mListScreen.get(position).getTitle());
         description.setText(mListScreen.get(position).getDescription());

@@ -1,6 +1,5 @@
 package com.saviart.lootskins;
 
-import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +10,11 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.gigamole.navigationtabstrip.NavigationTabStrip;
-
+import com.saviart.lootskins.adapter.Adapter_MainScreen;
+import com.saviart.lootskins.fragment_mainscreen.Fragment_Earn;
+import com.saviart.lootskins.fragment_mainscreen.Fragment_Profile;
+import com.saviart.lootskins.fragment_mainscreen.Fragment_Setting;
+import com.saviart.lootskins.fragment_mainscreen.Fragment_Skin;
 
 
 public class MainScreenActivity extends AppCompatActivity {
@@ -41,8 +44,8 @@ public class MainScreenActivity extends AppCompatActivity {
     }
 
     private void initUI() {
-        mViewPager = (ViewPager) findViewById(R.id.vp);
-        mNavigationTabStrip = (NavigationTabStrip) findViewById(R.id.nts_center);
+        mViewPager = (ViewPager) findViewById(R.id.viewpager_main);
+        mNavigationTabStrip = (NavigationTabStrip) findViewById(R.id.navigation_main);
         mNavigationTabStrip.setTitles("SKINS", "PROFILE", "EARN","SETTING");
 
 
@@ -75,12 +78,12 @@ public class MainScreenActivity extends AppCompatActivity {
             }
         });
         mNavigationTabStrip.setViewPager(mViewPager, 0);
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        Adapter_MainScreen adapter = new Adapter_MainScreen(getSupportFragmentManager());
         adapter.AddFragment(new Fragment_Skin(),"Skins");
         adapter.AddFragment(new Fragment_Profile(),"Profile");
         adapter.AddFragment(new Fragment_Earn(),"Earn");
         adapter.AddFragment(new Fragment_Setting(),"Setting");
-        mViewPager =(ViewPager) findViewById(R.id.vp);
+        mViewPager =(ViewPager) findViewById(R.id.viewpager_main);
         mViewPager.setAdapter(adapter);
     }
 }

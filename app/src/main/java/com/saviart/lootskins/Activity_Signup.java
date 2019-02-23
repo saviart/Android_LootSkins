@@ -10,7 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 
-public class SignupActivity extends AppCompatActivity {
+public class Activity_Signup extends AppCompatActivity {
 
     ImageButton btnSignup;
 
@@ -29,7 +29,7 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(SignupActivity.this, MainScreenActivity.class));
+                startActivity(new Intent(Activity_Signup.this, Activity_Intro.class));
 
 
             }

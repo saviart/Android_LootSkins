@@ -1,11 +1,11 @@
-package com.saviart.lootskins;
+package com.saviart.lootskins.constructor;
 
-public class ScreenItem {
+public class Constructor_Intro {
     String Title,Description;
 
     int ScreenImg;
 
-    public ScreenItem(String title, String description, int screenImg) {
+    public Constructor_Intro(String title, String description, int screenImg) {
         Title = title;
         Description = description;
         ScreenImg = screenImg;
