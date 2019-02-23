@@ -17,7 +17,7 @@ import com.saviart.lootskins.fragment_mainscreen.Fragment_Setting;
 import com.saviart.lootskins.fragment_mainscreen.Fragment_Skin;
 
 
-public class MainScreenActivity extends AppCompatActivity {
+public class Activity_MainScreen extends AppCompatActivity {
     private ViewPager mViewPager;
     private NavigationTabStrip mNavigationTabStrip;
 

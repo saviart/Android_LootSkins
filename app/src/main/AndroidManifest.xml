@@ -11,9 +11,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Activity_Intro"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".MainScreenActivity"
+        <activity android:name=".Activity_MainScreen"
             android:screenOrientation="portrait"/>
-        <activity android:name=".LoadActivity"
+        <activity android:name=".Activity_Loading"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".Activity_Signup"
