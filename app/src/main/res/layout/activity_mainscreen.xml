@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity_Intro"
-    android:background="@drawable/login_bg">
+    android:background="@drawable/bg_main">
 
 
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#ff252e39"
+        android:background="@drawable/navigation_main"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
@@ -21,7 +21,7 @@
             android:layout_height="4dp"
             android:layout_gravity="center"
             android:layout_marginTop="18dp"
-            android:background="#182128" />
+            android:background="@drawable/navigation_view" />
 
         <com.gigamole.navigationtabstrip.NavigationTabStrip
             android:id="@+id/navigation_main"
@@ -32,14 +32,14 @@
             android:layout_marginLeft="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
-            app:nts_active_color="#fff"
-            app:nts_color="#3cdedd"
+            app:nts_active_color="#FF05D6FA"
+            app:nts_color="#05D6FA"
             app:nts_corners_radius="3.5dp"
-            app:nts_factor="0.8"
+            app:nts_factor="0.5"
             app:nts_gravity="bottom"
             app:nts_inactive_color="#81ffffff"
             app:nts_titles="@array/titles"
-            app:nts_type="point"
+            app:nts_type="line"
             app:nts_typeface="fonts/moon.otf"
             app:nts_weight="7dp" />
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity_Intro"
-    android:background="@drawable/login_bg">
+    android:background="@drawable/bg_main">
 
 
     <android.support.v4.view.ViewPager
