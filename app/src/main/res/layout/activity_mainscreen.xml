@@ -40,7 +40,7 @@
             app:nts_gravity="bottom"
             app:nts_inactive_color="#81ffffff"
             app:nts_titles="@array/titles"
-            app:nts_type="line"
+            app:nts_type="point"
             app:nts_typeface="fonts/moon.otf"
             app:nts_weight="3dp" />
 
