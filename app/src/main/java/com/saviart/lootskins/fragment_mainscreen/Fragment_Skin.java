@@ -4,15 +4,15 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import  android.view.View;
 import  android.view.ViewGroup;
 import android.support.annotation.NonNull;
-import android.widget.LinearLayout;
-import android.widget.ListView;
 
 import com.saviart.lootskins.R;
-import com.saviart.lootskins.adapter.Adapter_ListItems;
+import com.saviart.lootskins.adapter.RecyclerViewAdapter;
 import com.saviart.lootskins.constructor.Construtor_ListItems;
 
 import java.util.ArrayList;
@@ -20,9 +20,9 @@ import java.util.ArrayList;
 public class Fragment_Skin extends Fragment {
 
 View view;
-ListView ListItems;
+RecyclerView ListItems;
 ArrayList<Construtor_ListItems> arrayListItems;
-Adapter_ListItems adapter;
+RecyclerViewAdapter adapter;
 
 
 
@@ -34,16 +34,23 @@ public Fragment_Skin(){
     public  View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceStage) {
     view = inflater.inflate(R.layout.fragment_skin,container,false);
     anhxa();
-    adapter = new Adapter_ListItems(getActivity(),R.layout.format_listitems,arrayListItems);
 
+
+
+    adapter = new RecyclerViewAdapter(getActivity(),R.layout.format_listitems,arrayListItems);
+
+    LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+    layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+
+    ListItems.setLayoutManager(layoutManager);
     ListItems.setAdapter(adapter);
-
+   // adapter.notifyDataSetChanged();
 
     return view;
 }
 
 private void anhxa(){
-    ListItems = (ListView) view.findViewById(R.id.listviewitems);
+    ListItems = (RecyclerView) view.findViewById(R.id.listviewitems);
     arrayListItems = new ArrayList<>();
 
     arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"XM1014|Blue Spruce","Minimal Wear","400","CS:GO"));
