@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.saviart.lootskins">
+    package="com.saviart.skinspace">
 
     <application
         android:allowBackup="true"
@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_Intro"
+        <activity android:name="com.saviart.skinspace.Activity_Intro"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".Activity_MainScreen"
+        <activity android:name="com.saviart.skinspace.Activity_MainScreen"
             android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Loading"
+        <activity android:name="com.saviart.skinspace.Activity_Loading"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Activity_Signup"
+            android:name="com.saviart.skinspace.Activity_Signup"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

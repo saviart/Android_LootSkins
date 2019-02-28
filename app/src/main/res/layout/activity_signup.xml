@@ -1,97 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_main"
-    tools:context=".Activity_Signup">
+    android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="253dp"
-        android:layout_height="369dp"
-        android:layout_marginTop="53dp"
-        android:foregroundGravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        android:id="@+id/star3"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:src="@drawable/stars3" />
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:src="@drawable/stars2" />
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:src="@drawable/stars1" />
 
-    <TextView
-        android:id="@+id/lblAppName"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/aqua"
-        android:gravity="center"
-        android:text="LOOTSKINS"
-        android:textColor="#FDFDFD"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aqua"
-        android:text="Earn point. Get your skills"
-        android:textColor="#FDFDFD"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblAppName" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:buttonTint="@color/colorAccent"
-        android:text="Iaccept Privacy Policy"
-        android:textColor="#FDFDFD"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:buttonTint="@color/colorAccent"
-        android:text="I accept Terms and Conditions "
-        android:textColor="#FDFDFD"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
-    <ImageButton
-        android:id="@+id/btnSignup"
-        android:layout_width="135dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/signup"
-        tools:srcCompat="@drawable/signup" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
 
-</android.support.constraint.ConstraintLayout>
+    tools:context=".Activity_Signup"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical">
+                             <ImageView
+                                android:id="@+id/imglogo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/logo"
+                                app:srcCompat="@drawable/logo"
+                                tools:srcCompat="@drawable/logo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblAppName"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aqua"
+                        android:text="SKINSPACE"
+                        android:textColor="#FFFF"
+                        android:textSize="23sp" />
+                    <TextView
+                        android:id="@+id/lbldes"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aqua"
+                        android:text="Earn Point. Get your skins"
+                        android:textColor="#FFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_gravity="center"
+
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:buttonTint="@color/colorAccent"
+                        android:text="Iaccept Privacy Policy"
+                        android:textColor="#FDFDFD"
+                        />
+
+                    <CheckBox
+
+                        android:layout_gravity="center"
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:buttonTint="@color/colorAccent"
+                        android:text="I accept Terms and Conditions "
+                        android:textColor="#FDFDFD"
+                       />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/btnSignup"
+                        android:layout_width="175dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/signup"
+                        android:text="Sign in with Google"
+                        android:textColor="#FFFF"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+
+</LinearLayout>
+    </RelativeLayout>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/lblAppName"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_marginTop="96dp"-->
+        <!--android:fontFamily="@font/aqua"-->
+        <!--android:foregroundGravity="center_horizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:text="SKINSPACE"-->
+        <!--android:textColor="#FDFDFD"-->
+        <!--android:textSize="20sp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/imageView2" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:fontFamily="@font/aqua"-->
+        <!--android:text="Earn point. Get your skills"-->
+        <!--android:textColor="#FDFDFD"-->
+        <!--android:textSize="12sp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.506"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/lblAppName" />-->
+
+
+
+
+
+    <!--</LinearLayou-->
