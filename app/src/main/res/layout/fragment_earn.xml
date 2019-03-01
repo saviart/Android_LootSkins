@@ -15,7 +15,7 @@
         android:fontFamily="@font/aqua"
         android:gravity="center"
         android:text="Screen 3"
-        android:textColor="#FDFDFD"
+        android:textColor="#090707"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

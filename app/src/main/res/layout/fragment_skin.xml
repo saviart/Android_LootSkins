@@ -1,74 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-
-    android:weightSum="10"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-   <LinearLayout
-       android:orientation="vertical"
-       android:background="@drawable/bg_header"
-       android:layout_marginTop="30dp"
-       android:layout_marginLeft="4dp"
-       android:layout_marginRight="5dp"
-       android:layout_width="match_parent"
-       android:layout_height="0dp"
-       android:layout_weight="2.5"
-
-       />
-
 
 
     <LinearLayout
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"/>
-
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:background="@drawable/bg_listitems"
+        android:layout_height="match_parent"
         android:weightSum="10"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-       android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="7">
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_weight="9"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-                    <TextView
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Aviable Items"
-                        android:layout_gravity="center"
-                        android:textColor="#ffff"
-                        android:foregroundGravity="center"
-                        android:textSize="15sp"/>
-                </LinearLayout>
+        android:orientation="vertical"
+        android:background="@drawable/bg_inside">
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_weight="0.7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_search"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:drawableRight="@drawable/ic_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Search"
+                android:paddingLeft="8dp"
+                android:textSize="15sp"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="9.1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_listitems"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="10"
+                            android:orientation="vertical">
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:weightSum="2">
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:orientation="horizontal"
+                                                        android:layout_weight="1">
+
+                                                        <TextView
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_marginLeft="10dp"
+                                                            android:layout_marginTop="10dp"
+                                                            android:foregroundGravity="center"
+                                                            android:text="Aviable Items"
+                                                            android:textColor="#131212"
+                                                            android:textSize="15sp" />
 
 
-                    <android.support.v7.widget.RecyclerView
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:id="@+id/listviewitems"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:dividerHeight="5sp"/>
+                                                    </LinearLayout>
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:orientation="vertical"
+                                                        android:layout_weight="1">
+                                                        <ImageView
+                                                            android:layout_gravity="center"
+                                                            android:layout_marginTop="10dp"
+                                                            android:layout_marginLeft="60dp"
+                                                            android:layout_width="20dp"
+                                                            android:layout_height="25dp"
+                                                            android:src="@drawable/btn_sort"/>
+
+                                                    </LinearLayout>
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_weight="9"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp">
+
+                                            <android.support.v7.widget.RecyclerView
+                                                android:id="@+id/listviewitems"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginLeft="2dp"
+                                                android:layout_marginTop="0dp"
+                                                android:layout_marginRight="2dp"
+                                                android:layout_weight="1"
+                                                android:dividerHeight="2dp"
+                                                android:orientation="vertical" />
+                                        </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
     </LinearLayout>
 
 
 
+    <!--<TextView-->
+    <!--android:id="@+id/lblAppName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="44dp"-->
+    <!--android:layout_marginTop="96dp"-->
+    <!--android:fontFamily="@font/aqua"-->
+    <!--android:foregroundGravity="center_horizontal"-->
+    <!--android:gravity="center"-->
+    <!--android:text="SKINSPACE"-->
+    <!--android:textColor="#FDFDFD"-->
+    <!--android:textSize="20sp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/imageView2" />-->
 
-</LinearLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:fontFamily="@font/aqua"-->
+    <!--android:text="Earn point. Get your skills"-->
+    <!--android:textColor="#FDFDFD"-->
+    <!--android:textSize="12sp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.506"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/lblAppName" />-->
+
+
+
+
+
+    <!--</LinearLayou-->
+
+
+
+
+
+
+
+

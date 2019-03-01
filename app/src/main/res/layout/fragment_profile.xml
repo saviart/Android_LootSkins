@@ -1,40 +1,287 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@drawable/bg_profile">
 
-    tools:context=".Activity_Signup">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/aqua"
-        android:gravity="center"
-        android:text="Screen 2"
-        android:textColor="#FDFDFD"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+    <LinearLayout
+        android:layout_weight="8.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_userinfomation"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        >
 
-    <TextView
-        android:id="@+id/text4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginLeft="116dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/aqua"
-        android:text="Earn point. Get your skills"
-        android:textColor="#FDFDFD"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text3" />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/img_avt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SkinSpace"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Member since: 2019-3-1" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_earn">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_gravity="center"
+                                        android:paddingTop="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_invite"/>
+                                    <TextView
+                                        android:layout_gravity="center"
+                                        android:paddingTop="5dp"
+                                        android:paddingLeft="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textSize="15sp"
+                                        android:fontFamily="@font/poppinsmedium"
+                                        android:textColor="#070707"/>
+
+
+                                </LinearLayout>
+
+
+
+                                <Button
+                                    android:background="@drawable/bg_btninvite"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:text="+Invite"
+                                    android:textSize="9sp"/>
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:layout_gravity="center"
+                                            android:paddingTop="5dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_point"/>
+                                        <TextView
+                                            android:layout_gravity="center"
+                                            android:paddingTop="5dp"
+                                            android:paddingLeft="5dp"
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textSize="15sp"
+                                            android:fontFamily="@font/poppinsmedium"
+                                            android:textColor="#070707"/>
+
+
+                                    </LinearLayout>
+
+
+
+                                    <Button
+
+                                        android:background="@drawable/bg_btngetmore"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="center"
+                                        android:text="Get More"
+                                        android:textSize="9sp"/>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:layout_gravity="center"
+                                            android:paddingTop="5dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_earned"/>
+                                        <TextView
+                                            android:layout_gravity="center"
+                                            android:paddingTop="5dp"
+                                            android:paddingLeft="5dp"
+                                            android:id="@+id/desitem"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textSize="15sp"
+                                            android:fontFamily="@font/poppinsmedium"
+                                            android:textColor="#070707"/>
+
+
+                                    </LinearLayout>
+
+
+
+                                    <Button
+
+                                        android:background="@drawable/bg_btnshare"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="center"
+                                        android:text="Share"
+                                        android:textSize="9sp"/>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+                        android:layout_weight="7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/listviewitems"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:dividerHeight="2dp"
+                            android:orientation="vertical" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+

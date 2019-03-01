@@ -12,7 +12,8 @@
         <activity android:name="com.saviart.skinspace.Activity_Intro"
             android:screenOrientation="portrait"></activity>
         <activity android:name="com.saviart.skinspace.Activity_MainScreen"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
         <activity android:name="com.saviart.skinspace.Activity_Loading"
             android:screenOrientation="portrait"/>
         <activity
