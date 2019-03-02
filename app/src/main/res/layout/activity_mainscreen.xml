@@ -39,7 +39,7 @@
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
             app:nts_active_color="#000000"
-            app:nts_color="#12FFFF"
+            app:nts_color="#2D2F31"
             app:nts_corners_radius="3.5dp"
             app:nts_factor="0.5"
             app:nts_gravity="bottom"

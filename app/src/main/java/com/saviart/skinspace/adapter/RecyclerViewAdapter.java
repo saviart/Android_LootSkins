@@ -1,4 +1,5 @@
 package com.saviart.skinspace.adapter;
+import android.app.Dialog;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -18,6 +19,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private List<Construtor_ListItems> data = new ArrayList<>();
     private Context context;
     private int layout;
+
+
 
     public RecyclerViewAdapter(Context context, int layout, List<Construtor_ListItems> itemsList) {
         this.data = itemsList;
@@ -50,6 +53,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
 
     public class ItemViewHolder extends RecyclerView.ViewHolder {
+
+
+
+
+
         TextView txtgame;
         TextView nameitem ;
         TextView desitem;

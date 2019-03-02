@@ -2,14 +2,14 @@ package com.saviart.skinspace.constructor;
 
 public class Construtor_Profile {
     private int img_trans_item;
-    private String name_strans_item,des_trans_item,numb_trans_coin,txt_trans_game;
+    private String name_strans_item,des_trans_item,numb_trans_coin,trans_status;
 
     public Construtor_Profile(int img_trans_item, String name_strans_item, String des_trans_item, String numb_trans_coin, String txt_trans_game) {
         this.img_trans_item = img_trans_item;
         this.name_strans_item = name_strans_item;
         this.des_trans_item = des_trans_item;
         this.numb_trans_coin = numb_trans_coin;
-        this.txt_trans_game = txt_trans_game;
+        this.trans_status = txt_trans_game;
     }
 
     public int getImg_trans_item() {
@@ -45,10 +45,10 @@ public class Construtor_Profile {
     }
 
     public String getTxt_trans_game() {
-        return txt_trans_game;
+        return trans_status;
     }
 
     public void setTxt_trans_game(String txt_trans_game) {
-        this.txt_trans_game = txt_trans_game;
+        this.trans_status = txt_trans_game;
     }
 }

@@ -37,7 +37,7 @@ public class AdapterRcvProfile extends RecyclerView.Adapter<AdapterRcvProfile.It
         holder.name_trans_item.setText(item.getName_strans_item());
         holder.des_trans_item.setText(item.getDes_trans_item());
         holder.numb_trans_coin.setText(item.getNumb_trans_coin());
-        holder.txt_trans_game.setText(item.getTxt_trans_game());
+        holder.trans_status.setText(item.getTxt_trans_game());
         holder.img_trans_item.setImageResource(item.getImg_trans_item());
 
 
@@ -51,7 +51,7 @@ public class AdapterRcvProfile extends RecyclerView.Adapter<AdapterRcvProfile.It
 
     public class ItemViewHolder extends RecyclerView.ViewHolder {
 
-        TextView txt_trans_game;
+        TextView trans_status;
         TextView name_trans_item ;
         TextView des_trans_item;
         TextView numb_trans_coin;
@@ -64,7 +64,7 @@ public class AdapterRcvProfile extends RecyclerView.Adapter<AdapterRcvProfile.It
             name_trans_item = (TextView) itemView.findViewById(R.id.name_trans_item);
             des_trans_item = (TextView) itemView.findViewById(R.id.des_trans_item);
             numb_trans_coin = (TextView)itemView .findViewById(R.id.numb_trans_coin);
-            txt_trans_game = (TextView)itemView .findViewById(R.id.txt_trans_game);
+            trans_status = (TextView)itemView .findViewById(R.id.trans_status);
 
 
         }

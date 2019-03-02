@@ -56,12 +56,12 @@ public class Fragment_Profile extends Fragment {
         arrayListItems = new ArrayList<>();
 
 //
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","1235","PUBG"));
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample2,"AKM","Facoty New","789","PUBG"));
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","909","CS:GO"));
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","1235","PUBG"));
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample2,"AKM","Facoty New","789","PUBG"));
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","909","CS:GO"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","1235","PENDING"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample2,"AKM","Facoty New","789","SUCCESS"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","9092","SUCCESS"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","1235","SUCCESS"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample2,"AKM","Facoty New","789","SUCCESS"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","9092","SUCCESS"));
 
 
 
