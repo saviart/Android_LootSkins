@@ -8,6 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity_Intro"
+    android:background="@drawable/bg_inside"
     >
 
 
@@ -22,7 +23,7 @@
         <View
             android:id="@+id/navigation_view"
             android:layout_width="wrap_content"
-            android:layout_height="2dp"
+            android:layout_height="3dp"
             android:layout_gravity="bottom"
             android:layout_marginTop="5dp"
             android:background="@drawable/navigation_view"
@@ -37,14 +38,14 @@
             android:layout_marginLeft="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
-            app:nts_active_color="#31DF12"
-            app:nts_color="#05D6FA"
+            app:nts_active_color="#000000"
+            app:nts_color="#12FFFF"
             app:nts_corners_radius="3.5dp"
             app:nts_factor="0.5"
             app:nts_gravity="bottom"
-            app:nts_inactive_color="#81ffffff"
+            app:nts_inactive_color="#FFFFFF"
             app:nts_titles="@array/titles"
-            app:nts_type="point"
+            app:nts_type="line"
             app:nts_typeface="fonts/moon.otf"
             app:nts_weight="3dp" />
 

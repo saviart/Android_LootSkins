@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="10"
-    android:orientation="vertical"
-    android:background="@drawable/bg_profile">
+    android:orientation="vertical">
+    <!--android:background="@drawable/bg_profile">-->
 
     <LinearLayout
         android:orientation="horizontal"
@@ -65,14 +65,14 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="SkinSpace"
-                                            android:textSize="15sp"
+                                            android:textSize="12sp"
                                             android:textColor="#000000"
                                             android:fontFamily="@font/poppinsmedium"/>
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="Member since: 2019-3-1"
-                                            android:textSize="12sp"
+                                            android:textSize="10sp"
                                             android:textColor="#000000"
                                             android:fontFamily="@font/poppinsmedium"/>
                                     </LinearLayout>
@@ -129,9 +129,9 @@
                                                                                      android:fontFamily="@font/poppinsmedium"
                                                                                      android:paddingLeft="5dp"
                                                                                      android:paddingTop="1dp"
-                                                                                     android:text="0"
+                                                                                     android:text="0 Invite"
                                                                                      android:textColor="#070707"
-                                                                                     android:textSize="15sp" />
+                                                                                     android:textSize="10sp" />
 
                                                                              </LinearLayout>
                                                                              <LinearLayout
@@ -182,8 +182,8 @@
                                                                                     android:paddingLeft="5dp"
                                                                                     android:layout_width="wrap_content"
                                                                                     android:layout_height="wrap_content"
-                                                                                    android:text="0"
-                                                                                    android:textSize="15sp"
+                                                                                    android:text="0 Points"
+                                                                                    android:textSize="10sp"
                                                                                     android:fontFamily="@font/poppinsmedium"
                                                                                     android:textColor="#070707"/>
 
@@ -235,8 +235,8 @@
                                                                                     android:paddingLeft="5dp"
                                                                                     android:layout_width="wrap_content"
                                                                                     android:layout_height="wrap_content"
-                                                                                    android:text="0"
-                                                                                    android:textSize="15sp"
+                                                                                    android:text="0 Earned"
+                                                                                    android:textSize="10sp"
                                                                                     android:fontFamily="@font/poppinsmedium"
                                                                                     android:textColor="#070707"/>
 

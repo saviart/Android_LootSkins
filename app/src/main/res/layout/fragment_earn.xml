@@ -4,47 +4,460 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="10"
-    android:orientation="vertical"
-    android:background="@drawable/bg_earnings">
-
+    android:orientation="vertical">
+    <!--android:background="@drawable/bg_earnings">-->
 
     <LinearLayout
-        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_weight="1.5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+        android:layout_height="0dp">
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="8"
+        android:layout_weight="8.5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/bg_userinfomation"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp">>
+        android:layout_height="0dp">
+        <!---->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_userinfomation"
+            android:weightSum="10">
+
+            <!--LINE1-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_missingpoint"
+                android:layout_weight="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                            <TextView
+                            android:drawableLeft="@drawable/ic_missingpoint"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tap here if you have issues with missing point"
+                            android:textSize="10dp"
+                           android:fontFamily="@font/poppinsmedium"/>
+
+            </LinearLayout>
+
+
+            <!--LINE2-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="2.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+               >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+                        <LinearLayout
+                            android:background="@drawable/bg_network"
+                           android:layout_margin="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="3"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="3"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2">
+                                        <ImageView
+                                            android:layout_margin="3dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/fyber"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+                                        <Button
+                                            android:gravity="center"
+                                            android:background="@drawable/btn_fyber"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:text="fyber"
+                                            android:textSize="9sp"
+                                            android:layout_marginBottom="5dp"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="3"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2">
+                                        <ImageView
+                                            android:layout_margin="3dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/tapjoy"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+                                        <Button
+                                            android:background="@drawable/btn_tapjoy"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:text="tapjoy"
+                                            android:textSize="9sp"
+                                            android:layout_marginBottom="5dp"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="3"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2">
+                                        <ImageView
+                                            android:layout_margin="3dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/adscend"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+                                        <Button
+                                            android:background="@drawable/btn_adscend"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:text="adscend"
+                                            android:textSize="9sp"
+                                            android:layout_marginBottom="5dp"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--LINE3-->
+            <LinearLayout
+                android:layout_weight="0.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_earn">
+                <TextView
+
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Completion required to receive points. e.g. intall and open, complete the tutorial, reach the level etc.."
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+            <!--LINE4-->
+
+            <!--LINE2-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="2.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+                        <LinearLayout
+                            android:background="@drawable/bg_network"
+                            android:layout_margin="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="3"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="3"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2">
+                                        <ImageView
+                                            android:layout_margin="3dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/fyber"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+                                        <Button
+                                            android:gravity="center"
+                                            android:background="@drawable/btn_fyber"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:text="fyber video#1"
+                                            android:textSize="9sp"
+                                            android:layout_marginBottom="5dp"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="3"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2">
+                                        <ImageView
+                                            android:layout_margin="3dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/fybervideo"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+                                        <Button
+                                            android:background="@drawable/btn_tapjoy"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:text="fyber video#2"
+                                            android:textSize="9sp"
+                                            android:layout_marginBottom="5dp"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="3"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"/>
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--LINE3-->
+            <LinearLayout
+                android:layout_weight="0.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_earn">
+                <TextView
+
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Watch a short video to get the point"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+            <!--LINE5-->
+            <LinearLayout
+                android:layout_weight="4.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1">
+                        <TextView
+                            android:layout_gravity="left"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Last Earning"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@drawable/bg_itemtransactions">
+                        <android.support.v7.widget.RecyclerView
+
+                            android:id="@+id/rvtransitems"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="8dp"
+
+                            android:orientation="vertical" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
     </LinearLayout>
+
+
+
+
 
 </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
