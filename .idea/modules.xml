@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android_SkinSpace.iml" filepath="$PROJECT_DIR$/Android_SkinSpace.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/navigationtabstrip/navigationtabstrip.iml" filepath="$PROJECT_DIR$/navigationtabstrip/navigationtabstrip.iml" />
     </modules>
   </component>
 </project>

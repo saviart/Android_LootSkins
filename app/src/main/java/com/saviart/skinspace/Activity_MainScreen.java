@@ -18,16 +18,23 @@ import com.saviart.skinspace.fragment_mainscreen.Fragment_Skin;
 
 
 public class Activity_MainScreen extends AppCompatActivity {
-    private ViewPager mViewPager;
-    private NavigationTabStrip mNavigationTabStrip;
+    public ViewPager mViewPager;
+    public static Activity_MainScreen main;
+
+
+    public void selectIndex(int newIndex) {
+        mViewPager.setCurrentItem(newIndex);
+    }
 
     @Override
     public void onBackPressed() {
-        initUI();
-        setUI();
-
+        int currentPosition = mViewPager.getCurrentItem();
+        if (currentPosition != 0) {
+            mViewPager.setCurrentItem(0);
+        } else {
+            super.onBackPressed();
+        }
     }
-
 
 
     @Override
@@ -40,16 +47,12 @@ public class Activity_MainScreen extends AppCompatActivity {
 
         initUI();
         setUI();
+        main = this;
 
     }
 
     private void initUI() {
         mViewPager = (ViewPager) findViewById(R.id.viewpager_main);
-        mNavigationTabStrip = (NavigationTabStrip) findViewById(R.id.navigation_main);
-        mNavigationTabStrip.setTitles("SKINS", "PROFILE", "EARN","SETTING");
-
-
-
 
     }
 
@@ -77,13 +80,18 @@ public class Activity_MainScreen extends AppCompatActivity {
                 return view;
             }
         });
-        mNavigationTabStrip.setViewPager(mViewPager, 0);
+
+
         Adapter_MainScreen adapter = new Adapter_MainScreen(getSupportFragmentManager());
-        adapter.AddFragment(new Fragment_Skin(),"Skins");
-        adapter.AddFragment(new Fragment_Profile(),"Profile");
-        adapter.AddFragment(new Fragment_Earn(),"Earn");
-        adapter.AddFragment(new Fragment_Setting(),"Setting");
-        mViewPager =(ViewPager) findViewById(R.id.viewpager_main);
+        adapter.AddFragment(new Fragment_Skin(), "Skins");
+        adapter.AddFragment(new Fragment_Profile(), "Profile");
+        adapter.AddFragment(new Fragment_Earn(), "Earn");
+        adapter.AddFragment(new Fragment_Setting(), "Setting");
+        mViewPager = (ViewPager) findViewById(R.id.viewpager_main);
         mViewPager.setAdapter(adapter);
+    }
+
+    public ViewPager getViewPager() {
+        return mViewPager;
     }
 }
