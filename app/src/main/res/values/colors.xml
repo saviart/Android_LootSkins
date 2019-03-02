@@ -3,7 +3,7 @@
     <color name="colorPrimary">#142141</color>
     <color name="colorPrimaryDark">#142141</color>
     <color name="colorAccent">#D81B60</color>
-
+    <color name="bgBottomNavigation">#D1D1D3</color>
 
     <!-- colors for button style -->
 

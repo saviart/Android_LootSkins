@@ -1,6 +1,7 @@
 package com.saviart.skinspace.fragment_mainscreen;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -19,6 +20,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.saviart.skinspace.Activity_MainScreen;
+import com.saviart.skinspace.Activity_Signup;
 import com.saviart.skinspace.R;
 import com.saviart.skinspace.adapter.AdapterRcvProfile;
 
@@ -64,7 +66,7 @@ public class Fragment_Profile extends Fragment {
         btn_signout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity().getApplicationContext(),"đã bấm signout",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), Activity_Signup.class));
             }
         });
     }

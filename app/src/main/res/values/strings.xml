@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">SkinSpace</string>
 
+
+        <string name="title_skins">Skins</string>
+        <string name="title_profile">Profile</string>
+        <string name="title_earn">Earn</string>
+        <string name="title_setting">Setting</string>
+
 </resources>
