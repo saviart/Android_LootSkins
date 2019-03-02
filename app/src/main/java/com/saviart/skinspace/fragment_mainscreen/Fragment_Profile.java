@@ -1,6 +1,5 @@
 package com.saviart.skinspace.fragment_mainscreen;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -14,16 +13,17 @@ import  android.view.ViewGroup;
 import android.support.annotation.NonNull;
 
 import com.saviart.skinspace.R;
-import com.saviart.skinspace.adapter.RecyclerViewAdapter;
-import com.saviart.skinspace.constructor.Construtor_ListItems;
+import com.saviart.skinspace.adapter.AdapterRcvProfile;
+
+import com.saviart.skinspace.constructor.Construtor_Profile;
 
 import java.util.ArrayList;
 
 public class Fragment_Profile extends Fragment {
     View view;
     RecyclerView ListItems;
-    ArrayList<Construtor_ListItems> arrayListItems;
-    RecyclerViewAdapter adapter;
+    ArrayList<Construtor_Profile> arrayListItems;
+    AdapterRcvProfile adapter;
 
 
 
@@ -38,12 +38,13 @@ public class Fragment_Profile extends Fragment {
 
 
 
-        adapter = new RecyclerViewAdapter(getActivity(),R.layout.format_listitems,arrayListItems);
+        adapter = new AdapterRcvProfile(getActivity(),arrayListItems);
 
-       GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),3);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
 
-        ListItems.setLayoutManager(gridLayoutManager);
+        ListItems.setLayoutManager(layoutManager);
         ListItems.setAdapter(adapter);
         // adapter.notifyDataSetChanged();
 
@@ -51,28 +52,16 @@ public class Fragment_Profile extends Fragment {
     }
 
     private void anhxa(){
-        ListItems = (RecyclerView) view.findViewById(R.id.listviewitems);
+        ListItems = (RecyclerView) view.findViewById(R.id.rvtransitems);
         arrayListItems = new ArrayList<>();
 
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"XM1014|Blue Spruce","Minimal Wear","400","CS:GO"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"AKM","Facoty New","300","PUBG"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample2,"Tec-9","Feal Test","1200","PUBG"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"AKM","Facoty New","4030","PUBG"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample2,"AKM","Facoty New","1200","CS:GO"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"AKM","Minimal Wear","98","PUBG"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample2,"AK-47","Minimal Wear","4000","CS:GO"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"AKM","Minimalc","9700","CS:GO"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample2,"P2000|Turf","Minimal Wear","400","PUBG"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"AKM","SMinimal","400","PUBG"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"SG 553|Phantom","Facoty New","400","CS:GO"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"AKM","Facoty New","352","CS:GO"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample2,"AKM","Facoty New","120","PUBG"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"AKM","Facoty New","34","CS:GO"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample2,"AKM","Facoty New","4767","PUBG"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"AKM","Facoty New","1235","PUBG"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample2,"AKM","Facoty New","789","PUBG"));
-        arrayListItems.add(new Construtor_ListItems(R.drawable.gunsample,"AKM","Facoty New","909","CS:GO"));
-
+//
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","1235","PUBG"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample2,"AKM","Facoty New","789","PUBG"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","909","CS:GO"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","1235","PUBG"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample2,"AKM","Facoty New","789","PUBG"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample,"AKM","Facoty New","909","CS:GO"));
 
 
 

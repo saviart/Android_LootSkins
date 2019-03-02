@@ -37,7 +37,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
-            app:nts_active_color="#FF05D6FA"
+            app:nts_active_color="#31DF12"
             app:nts_color="#05D6FA"
             app:nts_corners_radius="3.5dp"
             app:nts_factor="0.5"
