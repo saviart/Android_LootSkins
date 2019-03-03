@@ -126,7 +126,14 @@ public class Fragment_Skin extends Fragment implements OnClickIteml {
         popup_imgitem.startAnimation(animstar3);
 
        //Code tính năng của popup ở đây.
-
+        Button  popup_btnconfirm = (Button) myDialog.findViewById(R.id.popup_btnconfirm);
+        popup_btnconfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity().getApplicationContext(),"Confirm",Toast.LENGTH_SHORT).show();
+                myDialog.dismiss();
+            }
+        });
     }
 
 
