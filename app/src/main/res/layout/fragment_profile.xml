@@ -1,381 +1,456 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="10"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="10">
     <!--android:background="@drawable/bg_profile">-->
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_weight="1.5"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
-    </LinearLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"></LinearLayout>
 
     <LinearLayout
-        android:layout_weight="8.5"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
-<!---->
+        android:layout_height="0dp"
+        android:layout_weight="8.5">
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_userinfomation"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <!--LINE1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5">
+
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                   android:layout_marginTop="20dp"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/bg_userinfomation"
-                    android:weightSum="10">
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                    <!--LINE1-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/img_avt" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="SkinSpace"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Member since: 2019-3-1"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_signout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:background="@drawable/btn_signout"
+                            android:text="Sign out"
+                            android:textColor="#ffff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--LINE2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/bg_earn"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
                             <LinearLayout
-                                android:layout_weight="2.5"
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp">
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
                                 <LinearLayout
-                                    android:orientation="horizontal"
-                                    android:gravity="center"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:weightSum="2">
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
                                     <LinearLayout
-                                        android:gravity="center"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1">
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:gravity="center">
+
                                         <ImageView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="center"
-                                            android:src="@drawable/img_avt" />
+                                            android:paddingTop="1dp"
+                                            android:src="@drawable/ic_invite" />
 
-                                    </LinearLayout>
-                                    <LinearLayout
-                                        android:gravity="center"
-                                        android:orientation="vertical"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1">
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="SkinSpace"
-                                            android:textSize="20sp"
-                                            android:textColor="#000000"
-                                            android:fontFamily="@font/poppinsmedium"/>
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Member since: 2019-3-1"
-                                            android:textSize="12sp"
-                                            android:textColor="#000000"
-                                            android:fontFamily="@font/poppinsmedium"/>
-                                        <Button
-                                            android:id="@+id/btn_signout"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="25dp"
-                                            android:background="@drawable/btn_signout"
-                                            android:text="Sign out"
-                                            android:textSize="12sp"
-                                            android:textColor="#ffff"/>
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/poppinsmedium"
+                                            android:paddingLeft="5dp"
+                                            android:paddingTop="1dp"
+                                            android:text="0 Invite"
+                                            android:textColor="#070707"
+                                            android:textSize="10sp" />
+
                                     </LinearLayout>
-                                </LinearLayout>
-                            </LinearLayout>
 
-
-                    <!--LINE2-->
-                            <LinearLayout
-                                android:orientation="vertical"
-                                android:layout_weight="1.7"
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:background="@drawable/bg_earn">
                                     <LinearLayout
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:weightSum="3"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
                                         android:orientation="vertical">
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="2">
-                                                        <LinearLayout
-                                                            android:layout_width="match_parent"
-                                                            android:layout_height="match_parent"
-                                                            android:weightSum="3"
-                                                            android:orientation="horizontal">
-                                                                    <LinearLayout
-                                                                        android:layout_width="wrap_content"
-                                                                        android:layout_height="match_parent"
-                                                                        android:layout_weight="1">
-                                                                         <LinearLayout
-                                                                             android:layout_width="match_parent"
-                                                                             android:layout_height="match_parent"
-                                                                             android:weightSum="3"
-                                                                             android:orientation="vertical">
-                                                                             <LinearLayout
-                                                                                 android:gravity="center"
-                                                                                 android:layout_width="match_parent"
-                                                                                 android:layout_height="wrap_content"
-                                                                                 android:layout_weight="2">
-                                                                                 <ImageView
-                                                                                     android:layout_gravity="center"
-                                                                                     android:paddingTop="1dp"
-                                                                                     android:layout_width="wrap_content"
-                                                                                     android:layout_height="wrap_content"
-                                                                                     android:src="@drawable/ic_invite"/>
 
-                                                                                 <TextView
-                                                                                     android:layout_width="wrap_content"
-                                                                                     android:layout_height="wrap_content"
-                                                                                     android:layout_gravity="center"
-                                                                                     android:fontFamily="@font/poppinsmedium"
-                                                                                     android:paddingLeft="5dp"
-                                                                                     android:paddingTop="1dp"
-                                                                                     android:text="0 Invite"
-                                                                                     android:textColor="#070707"
-                                                                                     android:textSize="10sp" />
-
-                                                                             </LinearLayout>
-                                                                             <LinearLayout
-                                                                                 android:orientation="vertical"
-                                                                                 android:layout_gravity="center"
-                                                                                 android:gravity="center"
-                                                                                 android:layout_width="match_parent"
-                                                                                 android:layout_height="wrap_content"
-                                                                                 android:layout_weight="1">
-                                                                                 <Button
-                                                                                     android:id="@+id/btn_invite"
-                                                                                     android:gravity="center"
-                                                                                     android:background="@drawable/bg_btninvite"
-                                                                                     android:layout_width="wrap_content"
-                                                                                     android:layout_height="20dp"
-                                                                                     android:text="+Invite"
-                                                                                     android:textSize="9sp"
-                                                                                     android:layout_marginBottom="10dp"/>
-
-                                                                             </LinearLayout>
-
-                                                                         </LinearLayout>
-
-
-                                                                    </LinearLayout>
-                                                                    <LinearLayout
-                                                                        android:layout_width="wrap_content"
-                                                                        android:layout_height="match_parent"
-                                                                        android:layout_weight="1">
-                                                                        <LinearLayout
-                                                                            android:layout_width="match_parent"
-                                                                            android:layout_height="match_parent"
-                                                                            android:weightSum="3"
-                                                                            android:orientation="vertical">
-                                                                            <LinearLayout
-                                                                                android:gravity="center"
-                                                                                android:layout_width="match_parent"
-                                                                                android:layout_height="wrap_content"
-                                                                                android:layout_weight="2">
-                                                                                <ImageView
-                                                                                    android:layout_gravity="center"
-                                                                                    android:paddingTop="1dp"
-                                                                                    android:layout_width="wrap_content"
-                                                                                    android:layout_height="wrap_content"
-                                                                                    android:src="@drawable/ic_point"/>
-                                                                                <TextView
-                                                                                    android:layout_gravity="center"
-                                                                                    android:paddingTop="1dp"
-                                                                                    android:paddingLeft="5dp"
-                                                                                    android:layout_width="wrap_content"
-                                                                                    android:layout_height="wrap_content"
-                                                                                    android:text="0 Points"
-                                                                                    android:textSize="10sp"
-                                                                                    android:fontFamily="@font/poppinsmedium"
-                                                                                    android:textColor="#070707"/>
-
-                                                                            </LinearLayout>
-                                                                            <LinearLayout
-                                                                                android:orientation="vertical"
-                                                                                android:layout_gravity="center"
-                                                                                android:gravity="center"
-                                                                                android:layout_width="match_parent"
-                                                                                android:layout_height="wrap_content"
-                                                                                android:layout_weight="1">
-                                                                                <Button
-                                                                                    android:id="@+id/btn_getmore"
-                                                                                    android:background="@drawable/bg_btngetmore"
-                                                                                    android:layout_width="wrap_content"
-                                                                                    android:layout_height="20dp"
-                                                                                    android:layout_gravity="center"
-                                                                                    android:text="get more"
-                                                                                    android:textSize="9sp"
-                                                                                    android:layout_marginBottom="10dp"/>
-
-                                                                            </LinearLayout>
-
-                                                                        </LinearLayout>
-
-                                                                    </LinearLayout>
-                                                                    <LinearLayout
-                                                                        android:layout_width="wrap_content"
-                                                                        android:layout_height="match_parent"
-                                                                        android:layout_weight="1">
-                                                                        <LinearLayout
-                                                                            android:layout_width="match_parent"
-                                                                            android:layout_height="match_parent"
-                                                                            android:weightSum="3"
-                                                                            android:orientation="vertical">
-                                                                            <LinearLayout
-                                                                                android:gravity="center"
-                                                                                android:layout_width="match_parent"
-                                                                                android:layout_height="wrap_content"
-                                                                                android:layout_weight="2">
-                                                                                <ImageView
-                                                                                    android:layout_gravity="center"
-                                                                                    android:paddingTop="1dp"
-                                                                                    android:layout_width="wrap_content"
-                                                                                    android:layout_height="wrap_content"
-                                                                                    android:src="@drawable/ic_earned"/>
-                                                                                <TextView
-                                                                                    android:layout_gravity="center"
-                                                                                    android:paddingTop="1dp"
-                                                                                    android:paddingLeft="5dp"
-                                                                                    android:layout_width="wrap_content"
-                                                                                    android:layout_height="wrap_content"
-                                                                                    android:text="0 Earned"
-                                                                                    android:textSize="10sp"
-                                                                                    android:fontFamily="@font/poppinsmedium"
-                                                                                    android:textColor="#070707"/>
-
-                                                                            </LinearLayout>
-                                                                            <LinearLayout
-                                                                                android:orientation="vertical"
-                                                                                android:layout_gravity="center"
-                                                                                android:gravity="center"
-                                                                                android:layout_width="match_parent"
-                                                                                android:layout_height="wrap_content"
-                                                                                android:layout_weight="1">
-                                                                                <Button
-                                                                                    android:id="@+id/btn_share"
-                                                                                    android:background="@drawable/bg_btnshare"
-                                                                                    android:layout_width="wrap_content"
-                                                                                    android:layout_height="20dp"
-                                                                                    android:layout_gravity="center"
-                                                                                    android:text="share"
-                                                                                    android:textSize="9sp"
-                                                                                    android:layout_marginBottom="10dp"/>
-
-                                                                            </LinearLayout>
-
-                                                                        </LinearLayout>
-
-                                                                    </LinearLayout>
-                                                        </LinearLayout>
-
-                                            </LinearLayout>
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1">
-
-                                            </LinearLayout>
+                                        <Button
+                                            android:id="@+id/btn_invite"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/bg_btninvite"
+                                            android:gravity="center"
+                                            android:text="+Invite"
+                                            android:textSize="9sp" />
 
                                     </LinearLayout>
 
+                                </LinearLayout>
+
 
                             </LinearLayout>
-                    <!--LINE3-->
-                            <LinearLayout
-                                android:layout_weight="0.1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/bg_earn">
-                                <TextView
 
-                                    android:layout_margin="10dp"
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Refer your friend using above code - you will both receive additional point !. Each invite friend user must earn at least 50 point"
-                                    android:textSize="10sp"/>
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:paddingTop="1dp"
+                                            android:src="@drawable/ic_point" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/poppinsmedium"
+                                            android:paddingLeft="5dp"
+                                            android:paddingTop="1dp"
+                                            android:text="0 Points"
+                                            android:textColor="#070707"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <Button
+                                            android:id="@+id/btn_getmore"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/bg_btngetmore"
+                                            android:text="get more"
+                                            android:textSize="9sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
 
                             </LinearLayout>
-                    <!--LINE4-->
-                            <LinearLayout
 
-                                android:layout_weight="0.1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/bg_earn">
-                                <TextView
-                                    android:layout_margin="10dp"
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Append SkinSpace.Net to Steam profile name to get more daily coins"
-                                    android:textSize="10sp"/>
-                            </LinearLayout>
-                    <!--LINE5-->
-                            <LinearLayout
-                                android:layout_weight="5.5"
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp">
-                                 <LinearLayout
-                                     android:layout_width="match_parent"
-                                     android:layout_height="match_parent"
-                                     android:weightSum="5"
-                                     android:orientation="vertical">
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_weight="0.1">
-                                                    <TextView
-                                                    android:layout_gravity="left"
-                                                    android:paddingLeft="10dp"
-                                                    android:paddingTop="5dp"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:text="Last Transactions"
-                                                    android:textColor="#000000"
-                                                    android:fontFamily="@font/poppinsmedium"
-                                                        android:textSize="10sp"/>
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
 
-                                                </LinearLayout>
-                                                 <LinearLayout
-                                                     android:layout_marginTop="10dp"
-                                                     android:layout_marginRight="10dp"
-                                                     android:layout_marginLeft="10dp"
-                                                     android:layout_marginBottom="10dp"
-                                                     android:layout_width="match_parent"
-                                                     android:layout_height="wrap_content"
-                                                     android:layout_weight="4"
-                                                     android:background="@drawable/bg_itemtransactions">
-                                                             <android.support.v7.widget.RecyclerView
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:gravity="center">
 
-                                                                 android:id="@+id/rvtransitems"
-                                                                 android:layout_width="match_parent"
-                                                                 android:layout_height="match_parent"
-                                                                 android:layout_marginLeft="5dp"
-                                                                 android:layout_marginTop="5dp"
-                                                                 android:layout_marginRight="5dp"
-                                                                 android:layout_marginBottom="8dp"
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:paddingTop="1dp"
+                                            android:src="@drawable/ic_earned" />
 
-                                                                 android:orientation="vertical" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/poppinsmedium"
+                                            android:paddingLeft="5dp"
+                                            android:paddingTop="1dp"
+                                            android:text="0 Earned"
+                                            android:textColor="#070707"
+                                            android:textSize="10sp" />
 
-                                                 </LinearLayout>
+                                    </LinearLayout>
 
-                                 </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <Button
+                                            android:id="@+id/btn_share"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/bg_btnshare"
+                                            android:text="share"
+                                            android:textSize="9sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
 
                             </LinearLayout>
+                        </LinearLayout>
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
+
+            </LinearLayout>
+            <!--LINE3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/bg_earn">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Refer your friend using above code - you will both receive additional point !. Each invite friend user must earn at least 50 point"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            <!--LINE4-->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/bg_earn">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Append SkinSpace.Net to Steam profile name to get more daily coins"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <!--LINE5-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5.5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppinsmedium"
+                                        android:text="Last Transactions"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:gravity="right">
+
+                                    <ImageView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:src="@drawable/ic_refresh" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/bg_itemtransactions">
+
+                        <android.support.v7.widget.RecyclerView
+
+                            android:id="@+id/rvtransitems"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="8dp"
+
+                            android:orientation="vertical" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
     </LinearLayout>
-
-
-
 
 
 </LinearLayout>

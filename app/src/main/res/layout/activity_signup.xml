@@ -144,7 +144,7 @@
                         android:layout_width="175dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/signup"
+                        android:background="@drawable/bg_btn_signup"
                         android:text="Sign in with Google"
                         android:textColor="#FFFF"
                         android:textSize="12sp"/>

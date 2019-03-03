@@ -58,6 +58,7 @@ public class Fragment_Profile extends Fragment {
         clickbtn_invite();
         clickbtn_share();
         clickbtn_signout();
+
         return view;
     }
 
@@ -116,12 +117,12 @@ public class Fragment_Profile extends Fragment {
         btn_getmore = (Button) view.findViewById(R.id.btn_getmore);
         ListItems = (RecyclerView) view.findViewById(R.id.rvtransitems);
         arrayListItems = new ArrayList<>();
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample, "AKM", "Facoty New", "1235", "PENDING"));
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample2, "AKM", "Facoty New", "789", "SUCCESS"));
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample, "AKM", "Facoty New", "9092", "SUCCESS"));
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample, "AKM", "Facoty New", "1235", "SUCCESS"));
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample2, "AKM", "Facoty New", "789", "SUCCESS"));
-        arrayListItems.add(new Construtor_Profile(R.drawable.gunsample, "AKM", "Facoty New", "9092", "SUCCESS"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.sample_csgo, "AKM", "Facoty New", "1235", "PENDING"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.sample_dota2, "AKM", "Facoty New", "789", "SUCCESS"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.sample_dota2, "AKM", "Facoty New", "9092", "SUCCESS"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.sample_csgo, "AKM", "Facoty New", "1235", "SUCCESS"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.sample_csgo, "AKM", "Facoty New", "789", "SUCCESS"));
+        arrayListItems.add(new Construtor_Profile(R.drawable.sample_csgo, "AKM", "Facoty New", "9092", "SUCCESS"));
 
         //Thêm item từ database code ở đây
 

@@ -36,7 +36,7 @@ public class AdapterRcvProfile extends RecyclerView.Adapter<AdapterRcvProfile.It
         Construtor_Profile item = data.get(position);
         holder.name_trans_item.setText(item.getName_strans_item());
         holder.des_trans_item.setText(item.getDes_trans_item());
-        holder.numb_trans_coin.setText(item.getNumb_trans_coin());
+        holder.numb_trans_point.setText(item.getNumb_trans_coin());
         holder.trans_status.setText(item.getTxt_trans_game());
         holder.img_trans_item.setImageResource(item.getImg_trans_item());
 
@@ -54,7 +54,7 @@ public class AdapterRcvProfile extends RecyclerView.Adapter<AdapterRcvProfile.It
         TextView trans_status;
         TextView name_trans_item ;
         TextView des_trans_item;
-        TextView numb_trans_coin;
+        TextView numb_trans_point;
         ImageView img_trans_item ;
 
         public ItemViewHolder(View itemView) {
@@ -63,7 +63,7 @@ public class AdapterRcvProfile extends RecyclerView.Adapter<AdapterRcvProfile.It
             img_trans_item = (ImageView) itemView.findViewById(R.id.img_trans_items);
             name_trans_item = (TextView) itemView.findViewById(R.id.name_trans_item);
             des_trans_item = (TextView) itemView.findViewById(R.id.des_trans_item);
-            numb_trans_coin = (TextView)itemView .findViewById(R.id.numb_trans_coin);
+            numb_trans_point = (TextView)itemView .findViewById(R.id.numb_trans_point);
             trans_status = (TextView)itemView .findViewById(R.id.trans_status);
 
 

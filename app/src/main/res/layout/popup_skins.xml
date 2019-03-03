@@ -112,7 +112,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
-                                    android:src="@drawable/gunsample" />
+                                    android:src="@drawable/sample_csgo" />
 
                                 <TextView
                                     android:id="@+id/popup_nameitem"
@@ -144,12 +144,13 @@
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:id="@+id/detail_item"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/poppinsmedium"
                                     android:gravity="left"
                                     android:paddingLeft="5dp"
-                                    android:text="Finish Catalog: 801. Added: 6 December 2018 Creator: Workshop Submission Update: Welcome to the Danger Zone"
+                                    android:text="Specific details of this item..........................................................................................................."
                                     android:textColor="#000000"
                                     android:textSize="10sp" />
 
@@ -164,15 +165,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:layout_marginBottom="15dp">
 
                         <Button
-                            android:id="@+id/popup_numbcoin"
+                            android:id="@+id/popup_numbpoint"
                             android:layout_width="wrap_content"
                             android:layout_height="27dp"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="2dp"
-                            android:layout_marginRight="2dp"
+                          android:layout_margin="2dp"
                             android:background="@drawable/bg_buttonpoint"
                             android:drawableLeft="@drawable/img_point"
                             android:fontFamily="@font/poppinsmedium"
@@ -187,8 +188,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="27dp"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="2dp"
-                            android:layout_marginRight="2dp"
+                            android:layout_margin="2dp"
                             android:background="@drawable/bg_game"
                             android:fontFamily="@font/poppinsmedium"
                             android:padding="5dp"
@@ -202,7 +202,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:layout_marginBottom="15dp">
 
                         <ImageView
                             android:layout_width="match_parent"
@@ -218,13 +219,14 @@
                             android:layout_height="27dp"
                             android:layout_gravity="center"
                             android:layout_marginLeft="60dp"
-
+                            android:layout_marginBottom="10dp"
                             android:layout_marginRight="60dp"
                             android:background="@drawable/bg_btngetmore"
                             android:fontFamily="@font/poppinsmedium"
                             android:padding="5dp"
                             android:text="CONFIRM"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            />
 
                     </LinearLayout>
                 </LinearLayout>

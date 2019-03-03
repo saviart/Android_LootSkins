@@ -24,7 +24,7 @@
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/gunsample"/>
+            android:src="@drawable/sample_csgo"/>
 
     </LinearLayout>
 
@@ -58,19 +58,20 @@
                 android:textSize="10sp"
                 android:fontFamily="@font/poppinsmedium"
                 android:textColor="#070707"/>
+
             <Button
-                android:drawableLeft="@drawable/img_point"
-                android:id="@+id/numb_trans_coin"
+                android:id="@+id/numb_trans_point"
                 android:layout_width="70dp"
-                android:layout_height="20dp"
+                android:layout_height="14dp"
                 android:layout_gravity="center"
                 android:layout_margin="3dp"
                 android:background="@drawable/bg_buttonpoint"
+                android:drawableLeft="@drawable/img_point"
+                android:fontFamily="@font/poppinsmedium"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp"
                 android:text="1234"
                 android:textSize="10sp"
-                android:paddingRight="15dp"
-                android:paddingLeft="5dp"
-                android:fontFamily="@font/poppinsmedium"
 
 
                 />
